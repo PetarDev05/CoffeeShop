@@ -143,3 +143,44 @@ input {
 }
 
 /* Section one end */
+
+/* Thanks */
+
+.message {
+  background-color: var(--beige);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.thanks-heading {
+  font-size: 55px;
+  font-style: italic;
+  color: var(--brown);
+  gap: 3rem;
+}
+
+.thanks-paragraph, .link-to-form {
+  font-size: 25px;
+  color: var(--brown);
+}
+
+@media (width < 400px) {
+  .message {
+    gap: 2rem;
+    padding: 0 10px;
+  }
+
+  .thanks-heading {
+    font-size: 40px;
+  }
+
+  .thanks-paragraph, .link-to-form {
+    font-size: 20px;
+  }
+}
+
+/* Thanks */

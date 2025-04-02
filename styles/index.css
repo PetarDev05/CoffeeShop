@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --beige: rgb(245, 245, 220);
+  --dark-beige: rgb(238, 192, 107);
+  --black: rgb(0, 0, 0);
+  --opacity-gray: rgba(255, 255, 255, 0.7);
+  --white: rgb(255, 255, 255);
+  --caramel: rgb(198, 142, 23);
+  --brown: rgb(58, 24, 0);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Section one */
+
+.section-one {
+  width: 100%;
+  height: calc(100vh - 150px);
+  position: relative;
+  overflow: hidden;
+}
+
+.section-one::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-image: url(../images/cups.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.blured-div {
+  width: 700px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  border: 5px solid var(--brown);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section-logo {
+  height: 200px;
+  width: auto;
+}
+
+.sec-one-text-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.section-one-desc {
+  font-size: 25px;
+  font-style: italic;
+  color: var(--brown);
+  color: var(--dark-beige);
+}
+
+.section-one-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--dark-beige);
+  color: var(--brown);
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.section-one-button:hover {
+  transform: scale(1.1);
+}
+
+@media (width < 720px) {
+  .blured-div {
+    width: 400px;
+  }
+}
+
+@media (width < 420px) {
+  .blured-div {
+    border: none;
+    border-top: 5px solid var(--brown);
+    border-bottom: 5px solid var(--brown);
+    border-radius: 0;
+    width: 100%;
+    height: 500px;
+  }
+
+  .section-one-desc {
+    font-size: 20px;
+  }
+}
+
+/* Section one end */
+
+/* Section two */
+
+.section-two {
+  width: 100%;
+  padding: 3rem 5rem;
+  background-color: var(--white);
+  position: relative;
+  box-shadow: 3px -4px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  background-color: var(--dark-beige);
+  overflow: hidden;
+}
+
+.section-two-heading {
+  font-size: 35px;
+  font-style: italic;
+  text-align: center;
+  background-color: var(--beige);
+  padding: 1rem 2.5rem 1rem 2rem;
+  border-radius: 15px;
+  box-shadow: 1px 1px 7px;
+}
+
+.about-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 10px;
+  background-color: var(--beige);
+  font-size: 18px;
+}
+
+.enterier, .service, .staff {
+  height: 300px;
+}
+
+.enterier-text, .service-text, .staff-text {
+  padding: 0 7rem;
+  text-align: center;
+}
+
+@media (width < 1000px) {
+  .about-holder {
+    width: 450px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .special {
+    flex-direction: column-reverse;
+  }
+
+  .enterier, .service, .staff {
+    width: 100%;
+    height: auto;
+  }
+
+  .enterier-text, .service-text, .staff-text {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (width < 500px) {
+  .section-two {
+    padding: 3rem 0;
+  }
+
+  .about-holder {
+    width: 100%;
+  }
+
+  .enterier-text, .service-text, .staff-text {
+    font-size: 15px;
+  }
+
+  .section-two-heading {
+    font-size: 30px;
+  }
+}
+
+/* Section two */
+
+/* Section three */
+
+.section-three {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  position: relative;
+  gap: 3rem;
+}
+
+.section-three::after {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-image: url(../images/beans.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.section-three-heading {
+  font-size: 35px;
+  font-style: italic;
+  z-index: 10;
+  background-color: var(--beige);
+  padding: 1rem 2.5rem 1rem 2rem;
+  border-radius: 15px;
+  box-shadow: 1px 1px 7px;
+}
+
+.info {
+  z-index: 10;
+  background-color: var(--beige);
+  padding: 2rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  text-wrap: nowrap;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  gap: 1rem;
+}
+
+.work-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time {
+  font-size: 20px;
+  margin: 15px;
+}
+
+.day {
+  text-align: left;
+}
+
+.hours {
+  text-align: right;
+}
+
+.time-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.line {
+  width: 1px;
+  height: 250px;
+  border: none;
+  background-color: var(--black);
+  z-index: 10;
+}
+
+@media (width < 1150px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+  }
+}
+
+@media (width < 500px) {
+  .section-three {
+    padding: 3rem 0;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+    border-radius: 0;
+    padding:  1rem 0.5rem;
+    gap: 1rem;
+  }
+
+  .contact-info {
+    font-size: 15px;
+  }
+
+  .time-holder {
+    width: 200px;
+  }
+
+  .section-three-heading {
+    font-size: 30px;
+  }
+}
+
+/* Section three end */

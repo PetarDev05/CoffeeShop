@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop</title>
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/menu.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Delius -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+  <!-- Delius -->
+
+  <!-- Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Roboto -->
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="header">
+    <div class="logo-holder">
+      <img class="logo" src="images/logo.png" alt="logo">
+      <p class="header-heading">Coffee Shop</p>
+    </div>
+    <nav class="navigation">
+      <ul class="link-list">
+        <li class="list-item"><a class="link" href="index.html">Pocetna</a></li>
+        <li class="list-item"><a class="link" href="menu.html">Meni</a></li>
+        <li class="list-item"><a class="link" href="form.html">Rezervacije</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="burger-menu-icon js-burger-menu-icon">
+    <span class="burger-line burger-line-1 js-line-1"></span>
+    <span class="burger-line burger-line-2 js-line-2"></span>
+    <span class="burger-line burger-line-3 js-line-3"></span>
+  </div>
+
+  <nav class="off-screen js-off-screen">
+    <ul class="off-list">
+      <li class="off-item"><a href="index.html" class="burger-link">Početna</a></li>
+      <li class="off-item"><a href="menu.html" class="burger-link">Meni</a></li>
+      <li class="off-item"><a href="form.html" class="burger-link">Rezervacije</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER END -->
+
+  <!-- MAIN -->
+    <main class="main">
+
+      <!-- Section one -->
+
+        <section class="section-one">
+          <div class="arrow-button js-arrow-button">
+            <span class="arrow-line al-1 js-al-1"></span>
+            <span class="arrow-line al-2 js-al-2"></span>
+          </div>
+
+          <div class="menu-nav js-menu-nav">
+            <h1 class="nav-heading">Navigacija</h1>
+            <div class="buttons-holder js-buttons-holder">
+
+            </div>
+          </div>
+
+          <div class="menu js-menu">
+            <h1 class="menu-heading">Meni</h1>
+            <div class="menu-items-holder js-menu-items-holder">
+
+            </div>
+          </div>
+        </section>
+
+      <!-- Section one end -->
+
+    </main>
+  <!-- MAIN END -->
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="logo-action">
+      <img class="footer-logo" src="images/logo.png" alt="footer-logo">
+      <hr class="footer-line">
+      <p class="call-to-action">Kod nas uvek ima mesta. <a href="form.html">Rezervisite</a></p>
+    </div>
+    <hr class="line-footer">
+    <div class="policy-holder">
+      <p class="policy"><a href="policy.html" target="_blank">Politika privatnosti</a></p>
+    </div>
+    <hr class="line-footer">
+    <div class="social-media">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-snapchat"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+    </div>
+  </footer>
+
+  <!-- FOOTER END -->
+
+  <script type="module" src="scripts/menu.js"></script>
+</body>
+
+</html>
